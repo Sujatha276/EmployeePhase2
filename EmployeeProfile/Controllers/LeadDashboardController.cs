@@ -9,7 +9,7 @@ namespace EmployeeProfile.Controllers
 {
     public class LeadDashboardController : Controller
     {
-        // GET: LeadDashboard
+        
         public Employee_PortalEntities db = new Employee_PortalEntities();
         public ActionResult Index()
         {
