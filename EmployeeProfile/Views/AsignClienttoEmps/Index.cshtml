@@ -1,0 +1,94 @@
+﻿@model IEnumerable<EmployeeProfile.Models.AsignClienttoEmp>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+@*<p>
+    @Html.ActionLink("Submit", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.ClientId)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.ClientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.POS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.POE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientBilling)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.ClientEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClientManagerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DesignationatClient)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeDetail.Firstname)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.ClientId)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.POS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.POE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientBilling)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientManagerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DesignationatClient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmployeeDetail.Firstname)
+            </td>
+            @*<td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+                </td>*@
+        </tr>
+    }
+
+</table>
